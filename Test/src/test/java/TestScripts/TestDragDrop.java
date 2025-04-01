@@ -30,7 +30,7 @@ public class TestDragDrop extends Basictestcap{
 	AndroidElement Destination = driver.findElementsByClassName("android.view.View").get(1);
 	TouchActions touch = new TouchActions(driver);
 //	 touch.dragAndDrop(first, second);
-	touch.longPress((WebElement) longPressOptions())
+	touch.longPress((WebElement) longPressOptions());
 	touch.longPress((WebElement) longPressOptions().withElement(element(source)).withDuration(ofSeconds(2))).moveToElement((WebElement) element(Destination)).release().perform();
 //	String act = driver.findElement(By.xpath("//android.widget.TextView[@text='Dropped!']")).getText();
 //	assertEquals(act,"Dropped!");
